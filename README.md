@@ -1,5 +1,6 @@
 # TesteEinstein
 
-Faltando pequenos ajustes;
+Finalizado, só revisar para achar possiveis erros.
 
-Está comparando porêm não sai do laço.
+* Comparação = OK
+* Sair do laço = OK
