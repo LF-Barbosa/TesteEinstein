@@ -1,12 +1,18 @@
-	programa
+programa
 {
 	
 	funcao inicio()
 	{
-		cadeia testeUsuario[5][5], testePronto[][] = {{"AMARELO","AZUL","VERMELHA","VERDE","BRANCA"},{"NORUEGUÊS","DINAMARQUÊS","INGLÊS","ALEMÃO","SUECO"},{"ÁGUA","CHÁ","LEITE","CAFÉ","CERVEJA"},{"DUNHIL","BLENDS","PALL MALL","PRINCE","BLUEMASTER"},{"GATOS","CAVALOS","PÁSSAROS","PEIXES","CACHORROS"}}, atributo[] = {"COR      ","NACIONALIDADE","BEBIDA      ","CIGARRO      ","ANIMAL      "}
-		inteiro opcao, desistir = 0, cont = 0
-		logico venceu = falso, fim
+		cadeia testeUsuario[5][5], testePronto[5][5] = {{"AMARELA","AZUL","VERMELHA","VERDE","BRANCA"},{"NORUEGUÊS","DINAMARQUÊS","INGLÊS","ALEMÃO","SUECO"},{"ÁGUA","CHÁ","LEITE","CAFÉ","CERVEJA"},{"DUNHIL","BLENDS","PALL MALL","PRINCE","BLUEMASTER"},{"GATOS","CAVALOS","PÁSSAROS","PEIXES","CACHORROS"}}, atributo[] = {"COR      ","NACIONALIDADE","BEBIDA      ","CIGARRO      ","ANIMAL      "}
+		inteiro opcao, desistir = 0, cont1 = 0, cont2 = 0 
+		logico venceu = falso, sair = falso
 
+		para (inteiro l=0; l < 5; l++){
+				para (inteiro c=0; c < 5; c++){
+					testeUsuario[l][c] = "Insira"
+				}
+			}
+			
 		faca{
 			escreva ("--------------------------------------------------------------------\n")
 			escreva ("                     TESTE DE EINSTEIN                              \n")
@@ -44,7 +50,7 @@
 					
 			 		escolha (opcao){
 						caso 1: // COR
-			 				escreva("\n1) AMARELO \n")
+			 				escreva("\n1) AMARELA \n")
 							escreva("2) AZUL \n")
 							escreva("3) VERMELHA \n")
 							escreva("4) VERDE \n")
@@ -55,7 +61,7 @@
 							
 			 				escolha (opcao){
 								caso 1: 
-									testeUsuario[0][0] = "AMARELO"
+									testeUsuario[0][0] = "AMARELA"
 			 						pare   // Impede que as instruções do caso 2 sejam executadas
 			 					caso 2: 
 			 						testeUsuario[0][0] = "AZUL"
@@ -202,7 +208,7 @@
 					
 			 		escolha (opcao){
 						caso 1: // COR
-			 				escreva("\n1) AMARELO \n")
+			 				escreva("\n1) AMARELA \n")
 							escreva("2) AZUL \n")
 							escreva("3) VERMELHA \n")
 							escreva("4) VERDE \n")
@@ -213,7 +219,7 @@
 							
 			 				escolha (opcao){
 								caso 1: 
-									testeUsuario[0][1] = "AMARELO"
+									testeUsuario[0][1] = "AMARELA"
 			 						pare   // Impede que as instruções do caso 2 sejam executadas
 			 					caso 2: 
 			 						testeUsuario[0][1] = "AZUL"
@@ -360,7 +366,7 @@
 					
 			 		escolha (opcao){
 						caso 1: // COR
-			 				escreva("\n1) AMARELO \n")
+			 				escreva("\n1) AMARELA \n")
 							escreva("2) AZUL \n")
 							escreva("3) VERMELHA \n")
 							escreva("4) VERDE \n")
@@ -371,7 +377,7 @@
 							
 			 				escolha (opcao){
 								caso 1: 
-									testeUsuario[0][2] = "AMARELO"
+									testeUsuario[0][2] = "AMARELA"
 			 						pare   // Impede que as instruções do caso 2 sejam executadas
 			 					caso 2: 
 			 						testeUsuario[0][2] = "AZUL"
@@ -518,7 +524,7 @@
 					
 			 		escolha (opcao){
 						caso 1: // COR
-			 				escreva("\n1) AMARELO \n")
+			 				escreva("\n1) AMARELA \n")
 							escreva("2) AZUL \n")
 							escreva("3) VERMELHA \n")
 							escreva("4) VERDE \n")
@@ -529,7 +535,7 @@
 							
 			 				escolha (opcao){
 								caso 1: 
-									testeUsuario[0][3] = "AMARELO"
+									testeUsuario[0][3] = "AMARELA"
 			 						pare   // Impede que as instruções do caso 2 sejam executadas
 			 					caso 2: 
 			 						testeUsuario[0][3] = "AZUL"
@@ -676,7 +682,7 @@
 					
 			 		escolha (opcao){
 						caso 1: // COR
-			 				escreva("\n1) AMARELO \n")
+			 				escreva("\n1) AMARELA \n")
 							escreva("2) AZUL \n")
 							escreva("3) VERMELHA \n")
 							escreva("4) VERDE \n")
@@ -687,7 +693,7 @@
 							
 			 				escolha (opcao){
 								caso 1: 
-									testeUsuario[0][4] = "AMARELO"
+									testeUsuario[0][4] = "AMARELA"
 			 						pare   // Impede que as instruções do caso 2 sejam executadas
 			 					caso 2: 
 			 						testeUsuario[0][4] = "AZUL"
@@ -823,39 +829,39 @@
 			 				pare   // Fim
 	
 			} // Fim do primeiro escolha caso
-			
-						
-			escreva ("Você desisti? SIM = 1, NÃO = 0: ")
-			leia(desistir)
-					
-		
-		}enquanto (cont <= 25 ou desistir != 1)
 
-		//para (inteiro l=0; l < 5; l++){
-			//escreva (atributo[l],"\t")
-			//para (inteiro c=0; c < 5; c++){
-				//escreva ("| ",testeUsuario[l][c]," |\t")
-				//se( testeUsuario[l][c] != testePronto[l][c] ){
-					escreva("Parabens")
+			//escreva ("Você desisti? SIM = 1, NÃO = 0: ")
+			//leia(desistir)
+
+			cont1++
+
+			se (cont1 >= 2){
+				cont2 = 0
+				para (inteiro l = 0; l < 5; l++){			
+					para (inteiro c = 0; c < 5; c++){
+						se (testeUsuario[l][c] == testePronto[l][c]){
+							cont2++
+						}
+						se (cont2 == 2){
+						venceu = verdadeiro
+						}
 					}
+				}
+			se(venceu == falso){
+				escreva ("Você desisti? SIM = 1, NÃO = 0: ")
+				leia(desistir)						
 			}
+			}
+			senao {
+				escreva ("Você desisti? SIM = 1, NÃO = 0: ")
+				leia(desistir)						
+			}
+
 			
+		}enquanto (desistir != 1 ou venceu == verdadeiro)		
 			
-			
-			escreva ("\n\n")
-		}			
+		se(venceu == verdadeiro){
+			escreva ("Parabéns você conseguiu terminar o Teste de Einstein.\nVocê agora faz parte do seleto grupo de pessoas que conseguiu resolver esse teste. ")
+		}
 	}
 }
-
-
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 455; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {cont, 7, 31, 4};
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
