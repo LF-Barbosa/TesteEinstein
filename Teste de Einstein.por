@@ -842,26 +842,34 @@ programa
 						se (testeUsuario[l][c] == testePronto[l][c]){
 							cont2++
 						}
-						se (cont2 == 2){
-						venceu = verdadeiro
-						}
 					}
 				}
-			se(venceu == falso){
-				escreva ("Você desisti? SIM = 1, NÃO = 0: ")
-				leia(desistir)						
-			}
+				se (cont2 == 2){
+						venceu = verdadeiro
+						sair = verdadeiro
+						}
+				se(sair == falso){
+					escreva ("\nVocê desisti? SIM = 1, NÃO = 0: ")
+					leia(desistir)
+					se (desistir == 1){
+						sair = verdadeiro											
+					}					
+				}
 			}
 			senao {
-				escreva ("Você desisti? SIM = 1, NÃO = 0: ")
-				leia(desistir)						
+				escreva ("\nVocê desisti? SIM = 1, NÃO = 0: ")
+				leia(desistir)
+				se (desistir == 1){
+					sair = verdadeiro											
+				}
 			}
 
+			limpa()
 			
-		}enquanto (desistir != 1 ou venceu == verdadeiro)		
+		}enquanto (sair == falso)		
 			
 		se(venceu == verdadeiro){
-			escreva ("Parabéns você conseguiu terminar o Teste de Einstein.\nVocê agora faz parte do seleto grupo de pessoas que conseguiu resolver esse teste. ")
+			escreva ("\n\nParabéns você conseguiu terminar o Teste de Einstein.\nVocê agora faz parte do seleto grupo de pessoas que conseguiu resolver esse teste. \n\n")
 		}
 	}
 }
