@@ -835,7 +835,7 @@ programa
 
 			cont1++
 
-			se (cont1 >= 2){
+			se (cont1 >= 25){
 				cont2 = 0
 				para (inteiro l = 0; l < 5; l++){			
 					para (inteiro c = 0; c < 5; c++){
@@ -844,7 +844,7 @@ programa
 						}
 					}
 				}
-				se (cont2 == 2){
+				se (cont2 == 25){
 						venceu = verdadeiro
 						sair = verdadeiro
 						}
@@ -870,6 +870,9 @@ programa
 			
 		se(venceu == verdadeiro){
 			escreva ("\n\nParabéns você conseguiu terminar o Teste de Einstein.\nVocê agora faz parte do seleto grupo de pessoas que conseguiu resolver esse teste. \n\n")
+		}
+		senao{
+			escreva("\n\nVocê DESISTIU!!!\n\n")
 		}
 	}
 }
