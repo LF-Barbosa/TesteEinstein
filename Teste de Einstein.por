@@ -3,7 +3,7 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia testeUsuario[5][5], testePronto[5][5] = {{"AMARELA","AZUL","VERMELHA","VERDE","BRANCA"},{"NORUEGUÊS","DINAMARQUÊS","INGLÊS","ALEMÃO","SUECO"},{"ÁGUA","CHÁ","LEITE","CAFÉ","CERVEJA"},{"DUNHIL","BLENDS","PALL MALL","PRINCE","BLUEMASTER"},{"GATOS","CAVALOS","PÁSSAROS","PEIXES","CACHORROS"}}, atributo[] = {"COR      ","NACIONALIDADE","BEBIDA      ","CIGARRO      ","ANIMAL      "}
+		cadeia testeUsuario[5][5], testePronto[5][5] = {{"AMARELA","AZUL","VERMELHA","VERDE","BRANCA"},{"NORUEGUÊS","DINAMARQUÊS","INGLÊS","ALEMÃO","SUECO"},{"ÁGUA"," CHÁ ","LEITE","CAFÉ","CERVEJA"},{"DUNHIL","BLENDS","PALL MALL","PRINCE","BLUEMASTER"},{"GATOS","CAVALOS","PÁSSAROS","PEIXES","CACHORROS"}}, atributo[] = {"COR      ","NACIONALIDADE","BEBIDA      ","CIGARRO      ","ANIMAL      "}
 		inteiro opcao, desistir = 0, cont1 = 0, cont2 = 0 
 		logico venceu = falso, sair = falso
 
@@ -129,7 +129,7 @@ programa
 									testeUsuario[2][0] = "CERVEJA"
 			 						pare   // Impede que as instruções do caso 4 sejam executadas
 			 					caso 4: 
-									testeUsuario[2][0] = "CHÁ"
+									testeUsuario[2][0] = " CHÁ "
 			 						pare   // Impede que as instruções do caso 5 sejam executadas
 			 					caso 5: 
 									testeUsuario[2][2] = "LEITE"
@@ -287,7 +287,7 @@ programa
 									testeUsuario[2][1] = "CERVEJA"
 			 						pare   // Impede que as instruções do caso 4 sejam executadas
 			 					caso 4: 
-									testeUsuario[2][1] = "CHÁ"
+									testeUsuario[2][1] = " CHÁ "
 			 						pare   // Impede que as instruções do caso 5 sejam executadas
 			 					caso 5: 
 									testeUsuario[2][1] = "LEITE"
@@ -445,7 +445,7 @@ programa
 									testeUsuario[2][2] = "CERVEJA"
 			 						pare   // Impede que as instruções do caso 4 sejam executadas
 			 					caso 4: 
-									testeUsuario[2][2] = "CHÁ"
+									testeUsuario[2][2] = " CHÁ "
 			 						pare   // Impede que as instruções do caso 5 sejam executadas
 			 					caso 5: 
 									testeUsuario[2][2] = "LEITE"
@@ -603,7 +603,7 @@ programa
 									testeUsuario[2][3] = "CERVEJA"
 			 						pare   // Impede que as instruções do caso 4 sejam executadas
 			 					caso 4: 
-									testeUsuario[2][3] = "CHÁ"
+									testeUsuario[2][3] = " CHÁ "
 			 						pare   // Impede que as instruções do caso 5 sejam executadas
 			 					caso 5: 
 									testeUsuario[2][3] = "LEITE"
@@ -761,7 +761,7 @@ programa
 									testeUsuario[2][4] = "CERVEJA"
 			 						pare   // Impede que as instruções do caso 4 sejam executadas
 			 					caso 4: 
-									testeUsuario[2][4] = "CHÁ"
+									testeUsuario[2][4] = " CHÁ "
 			 						pare   // Impede que as instruções do caso 5 sejam executadas
 			 					caso 5: 
 									testeUsuario[2][4] = "LEITE"
